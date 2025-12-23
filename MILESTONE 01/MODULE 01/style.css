@@ -1,0 +1,24 @@
+div  p {
+    color: red;
+}
+
+p:hover{
+    color: aqua;
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+input{
+    font-size: 30px;
+}
+
+.header{
+    background-color: bisque;
+    height: 600px;
+    background-image: url("images/istockphoto-157314260-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: bottom right;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

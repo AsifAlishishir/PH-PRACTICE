@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .row{
+            height: 400px;
+            display: flex;
+            margin-bottom: 5px;
+            gap: 5px;
+        }
+
+        .row > div {
+            flex: 1;
+        }
+
+        .row img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .vertical-collage img{
+            height: calc((100% - 5px) / 2);
+        }
+
+        .square-collage{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Image Collage</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <img src="images/A.jpg" alt="">
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/B.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/C.jpg" alt="">
+            </div>
+            <div class="vertical-collage">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="square-collage">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/H.jpg" alt="">
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

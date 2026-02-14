@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <h1>Our Website</h1>
+    <ul>
+      <li>Names</li>
+      <li>mili</li>
+      <li>asif</li>
+      <li>Names</li>
+    </ul>
+  </head>
+  <body>
+    <script>
+      const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+      for (const li of liCollection) {
+        console.log(li.innerText);
+      }
+    </script>
+  </body>
+</html>

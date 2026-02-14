@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p class="demo">First</p>
+  <p class="demo">Second</p>
+  <script>
+    let items = document.getElementsByClassName("demo");
+    console.log(items); // HTMLCollection(2)
+
+    // নতুন element যোগ করি
+    let newP = document.createElement("p");
+    newP.className = "demo";
+    newP.innerText = "Third";
+    document.body.appendChild(newP);
+
+    console.log(items); // HTMLCollection(3) → আপডেট হয়ে গেছে!
+  </script>
+</body>
+</html>

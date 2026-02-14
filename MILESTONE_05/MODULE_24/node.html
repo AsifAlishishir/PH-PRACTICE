@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <p class="demo">First</p>
+    <p class="demo">Second</p>
+    <script>
+      let items = document.querySelectorAll(".demo");
+      console.log(items); // NodeList(2)
+
+      // নতুন element যোগ করি
+      let newP = document.createElement("p");
+      newP.className = "demo";
+      newP.innerText = "Third";
+      document.body.appendChild(newP);
+
+      items = document.querySelectorAll(".demo");
+      console.log(items); // NodeList(2) → আপডেট হয়নি!
+    </script>
+  </body>
+</html>

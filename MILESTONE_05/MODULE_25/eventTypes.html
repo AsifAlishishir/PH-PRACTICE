@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-mouse">Hover Me</button>
+    <input type="text" name="" id="user-name" placeholder="your name" />
+    <input type="text" name="" id="user-email" placeholder="your email" />
+
+    <script>
+      //   const btn = document.getElementById("btn-mouse");
+
+      //   btn.addEventListener("mouseenter", function () {
+      //     console.log("Hovered!");
+      //   });
+
+      //   const btn = document.getElementById("btn-mouse");
+
+      //   btn.addEventListener("mousemove", function () {
+      //     console.log("Hovered!");
+      //   });
+
+      //   const btn = document.getElementById("btn-mouse");
+
+      //   btn.addEventListener("mouseout", function () {
+      //     console.log("Hovered!");
+      //   });
+
+    //   document
+    //     .getElementById("user-name")
+    //     .addEventListener("focus", function () {
+    //       console.log("user about to write name!");
+    //     });
+
+    //   document
+    //     .getElementById("user-email")
+    //     .addEventListener("blur", function () {
+    //       console.log("user about to write email!");
+    //     });
+
+    // document
+    //     .getElementById("user-name")
+    //     .addEventListener("keydown", function (e) {
+    //       console.log("typing!", e.target.value);
+    //     });
+
+
+    document
+        .getElementById("user-name")
+        .addEventListener("keyup", function (e) {
+          console.log("typing!", e.target.value);
+        });
+    </script>
+  </body>
+</html>

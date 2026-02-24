@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="makeYellow()">Click me</button>
+    <button onclick="makeRed()">Click me</button>
+    <br />
+    <button id="purple">Make purple</button>
+    <br />
+    <img id="img" onclick="imgChange()" src="./images/images.jpeg" alt="" />
+
+    <br /><br />
+    <button onclick="addNumber()">Increase by 1</button>
+    <p id="number">0</p>
+
+    <br /><br /><br />
+    <h2 style="display: none" id="name">My name</h2>
+    <button onclick="ShowHide()">Click Me</button>
+
+    <br /><br /><br />
+    <button onclick="addListItem()">Add a List Item</button>
+    <section>
+      <ul id="list-container"></ul>
+    </section>
+  </body>
+  <script>
+    function makeYellow() {
+      document.body.style.backgroundColor = "yellow";
+    }
+    function makeRed() {
+      document.body.style.backgroundColor = "red";
+    }
+
+    let counter = 0;
+    function addNumber() {
+      counter += 1;
+      document.getElementById("number").textContent = counter;
+    }
+
+    function ShowHide() {
+      const name = document.getElementById("name");
+      if (name.style.display == "none") {
+        name.style.display = "block";
+      } else {
+        name.style.display = "none";
+      }
+    }
+
+    let count = 1;
+
+    function addListItem() {
+      const listContainer = document.getElementById("list-container");
+      const liItem = document.createElement("li");
+      liItem.innerText = "Apple " + count;
+      listContainer.append(liItem);
+      count++;
+    }
+  </script>
+
+  <script src="./event.js"></script>
+</html>

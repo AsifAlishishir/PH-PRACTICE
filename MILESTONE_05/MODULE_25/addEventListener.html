@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="gold">Make Gold</button>
+
+    <br /><br />
+    <h2 id="page-title">Headline</h2>
+    <button id="update-btn">Update It</button>
+    <p id="paraName">No name</p>
+    <input type="text" name="" id="inputName" />
+    <button id="btnName">Add name</button>
+    <script>
+      const btn = document.getElementById("gold");
+      btn.addEventListener("click", function () {
+        document.body.style.backgroundColor = "goldenrod";
+      });
+
+      const updateBtn = document.getElementById("update-btn");
+      updateBtn.addEventListener("click", function () {
+        const pageTitle = document.getElementById("page-title");
+        pageTitle.innerText = "Title Changed Successfully!";
+      });
+
+      // first set the addEventListener
+      const btnName = document.getElementById("btnName");
+      btnName.addEventListener("click", function () {
+        // second take the input field value
+        const inputName = document.getElementById("inputName");
+        const name = inputName.value;
+
+        // third set the inputfield value to the desired location
+        const nameP = document.getElementById("paraName");
+        nameP.innerText = name;
+      });
+    </script>
+  </body>
+</html>

@@ -50,3 +50,51 @@
 // for (let obj in myObject) {
 //   console.log("Key: ", obj, " | type: ", typeof myObject[obj]);
 // }
+
+// let names = "mili is a very baaad girl";
+// let count = 0;
+// for (let name of names) {
+//   if (name.includes("a")) {
+//     count++;
+//   }
+// }
+// console.log(count);
+
+// let names = "mili is A very baaad girl";
+// let count = 0;
+
+// for (let name of names) {
+//   if (name.includes("a") || name.includes("A")) {
+//     count++;
+//   }
+// }
+// console.log(count);
+
+// let proverb = "The quick brown fox jumps over the lazy dog";
+
+// if (
+//   proverb.toLowerCase().includes("a") &&
+//   proverb.toLowerCase().includes("e") &&
+//   proverb.toLowerCase().includes("i") &&
+//   proverb.toLowerCase().includes("o") &&
+//   proverb.toLowerCase().includes("u")
+// ) {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+// let names = "javascript";
+// let name;
+// if (names.includes("j")) {
+//   name = names.replace("j", "J");
+// }
+// console.log(name);
+
+// let small = "asif ali shishir";
+// let capital = small
+//   .split(" ")
+//   .map((word) => word[0].toUpperCase() + word.slice(1))
+//   .join(" ");
+
+// console.log(capital);

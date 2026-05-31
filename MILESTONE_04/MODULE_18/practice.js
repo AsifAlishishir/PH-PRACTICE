@@ -48,10 +48,10 @@
 //   console.log(obj.name, "scored", obj.marks);
 // }
 
-const twoArray = [
-  [1, 2],
-  [3, 4],
-  [5, 6],
-];
-twoArray[1][0] = 99;
-console.log(twoArray);
+// const twoArray = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// twoArray[1][0] = 99;
+// console.log(twoArray);

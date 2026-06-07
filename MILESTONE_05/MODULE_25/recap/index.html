@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="header">No name</h3>
+    <input id="input-value" type="text" placeholder="your name" />
+    <button id="btn">Update</button>
+
+    <script>
+      // 1.select the btn and add addEventListener
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        // 2. get the value of input tag
+        const inputValue = document.getElementById("input-value").value;
+
+        // get the header tag and set input value to it
+        const header = document.getElementById("header");
+        header.innerText = inputValue;
+      });
+    </script>
+  </body>
+</html>
